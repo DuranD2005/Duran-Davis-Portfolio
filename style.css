@@ -115,6 +115,16 @@ border: 2px solid rgba(84, 120, 196, 0.151);
    list-style-type: none;
 }
 
+.projects a {
+  width: 400px;
+  height: 500px;
+  border-radius: 7%;
+  object-fit: cover;
+  padding: 1%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .skills {
 background-color: rgba(174, 189, 223, 0.575);
   padding: 2%;
