@@ -69,6 +69,14 @@ max-width: 600px;
   object-position: center 87%;
   padding: 1%;
   max-width: 100%;
+  /* Add hover effect for profile picture */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profpic:hover {
+  /* Scale up and add shadow on hover */
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 38, 255, 0.4);
 }
 
 .gint li {
@@ -77,11 +85,16 @@ max-width: 600px;
 }
 
 .gint img{
-
   width: 100px;
   height: 100px;
-  
+  /* Add hover effect for social media icons */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
+.gint img:hover {
+  /* Scale up and change opacity on hover */
+  transform: scale(1.2);
+  opacity: 0.8;
 }
 
 .gint ul {
@@ -109,20 +122,49 @@ background-color: rgba(174, 189, 223, 0.575);
 margin-top: 2em;
   box-shadow: 0 4px 8px rgb(0, 0, 0);
 border: 2px solid rgba(84, 120, 196, 0.151);
+padding: 2%;
 }
 
 .projects ul {
    list-style-type: none;
+   /* Display project items side by side */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+   padding: 0;
+   margin: 0;
+}
+
+.projects li {
+  /* Each project item takes up equal space */
+  flex: 1;
+  max-width: 300px;
+  min-width: 250px;
 }
 
 .projects a {
-  width: 400px;
-  height: 500px;
+  /* Style the project links and images */
+  display: block;
+  width: 100%;
+}
+
+.projects img {
+  /* Style the project images */
+  width: 100%;
+  height: 200px;
   border-radius: 7%;
   object-fit: cover;
-  padding: 1%;
-  display: flex;
-  flex-wrap: nowrap;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* Add hover effect for project images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects img:hover {
+  /* Scale up and enhance shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .skills {
