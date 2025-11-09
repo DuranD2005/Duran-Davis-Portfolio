@@ -187,6 +187,6 @@ display: inline-block;
 }
 @media (min-width: 370px) and (max-width: 1024px) {
   .bgimg {
-  height: 130%;
+  height: 135%;
   }
 }
