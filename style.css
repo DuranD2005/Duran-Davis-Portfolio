@@ -7,14 +7,16 @@ body {
   padding: 0%;
   margin:0%;
   font-weight: bold;
+  padding-bottom: 10em;
+
 }
 
 .bgimg {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 205%;
   background: url("img/bg.jpg") no-repeat center center;
   background-size: cover;
   z-index: -1;
@@ -171,6 +173,7 @@ padding: 2%;
 background-color: rgba(174, 189, 223, 0.575);
   padding: 2%;
   margin-top: 2em;
+    margin-bottom: 2em;
   box-shadow: 0 4px 8px rgb(0, 0, 0);
 border: 2px solid rgba(84, 120, 196, 0.151);
 }
@@ -181,4 +184,9 @@ border: 2px solid rgba(84, 120, 196, 0.151);
 
 .skills li{
 display: inline-block;
+}
+@media (min-width: 370px) and (max-width: 1024px) {
+  .bgimg {
+  height: 130%;
+  }
 }
